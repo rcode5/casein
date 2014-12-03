@@ -2,7 +2,7 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import 'casein-bootstrap-overrides';
+@import './casein-bootstrap-overrides';
 @media (min-width: 992px){
 
     #left-column {
