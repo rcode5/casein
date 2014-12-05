@@ -198,7 +198,14 @@ module Casein
   	  casein_form_tag_wrapper("<div class='casein-datetime-select'>".html_safe + form.datetime_select(attribute, strip_casein_options(options), merged_class_hash(options, 'form-control')) + "</div>".html_safe, form, obj, attribute, options).html_safe
   	end
 
-  	def casein_file_field form, obj, attribute, options = {}
+    def casein_color_field form, obj, attribute, options = {}
+      contents = "<div class='casein-color'>".html_safe +
+        form.color_field(attribute, strip_casein_options(options)) +
+        "</div>".html_safe
+  	  casein_form_tag_wrapper(contents, form, obj, attribute, options).html_safe
+    end
+
+    def casein_file_field form, obj, attribute, options = {}
   	  class_hash = merged_class_hash(options, 'form-control')
   	  contents = "<div class='#{class_hash[:class]}'>" + form.file_field(attribute, strip_casein_options(options)) + '</div>'
 
