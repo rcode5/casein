@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     "app/assets/images/casein/casein.png",
     "app/assets/javascripts/casein/casein.js",
     "app/assets/javascripts/casein/html5shiv.js",
-    "app/assets/stylesheets/casein/casein-bootstrap-overrides.css.scss",
+    "app/assets/stylesheets/casein/casein-bootstrap-overrides.scss",
     "app/assets/stylesheets/casein/casein.css.scss",
     "app/assets/stylesheets/casein/login.css.scss",
     "app/controllers/casein/admin_user_sessions_controller.rb",
