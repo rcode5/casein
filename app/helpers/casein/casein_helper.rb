@@ -205,7 +205,7 @@ module Casein
   	  casein_form_tag_wrapper(contents, form, obj, attribute, options).html_safe
     end
 
-    def casein_file_field form, obj, attribute, options = {}
+    def casein_file_field form, obj, object_name, attribute, options = {}
   	  class_hash = merged_class_hash(options, 'form-control')
   	  contents = "<div class='#{class_hash[:class]}'>" + form.file_field(attribute, strip_casein_options(options)) + '</div>'
 
